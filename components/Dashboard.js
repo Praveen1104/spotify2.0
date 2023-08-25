@@ -17,6 +17,7 @@ function Dashboard() {
   const [showplayer, setshowplayer] = useState(false);
   const { data: session } = useSession();
   const accessToken = session?.accessToken;
+  console.log(playingTrack)
   useEffect(() => {
     setshowplayer(true);
   }, []);

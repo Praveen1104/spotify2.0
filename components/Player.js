@@ -24,6 +24,7 @@ function Player({ accessToken, trackUri }) {
     }
   }, [trackUri]);
   if (!accessToken) return null;
+  console.log(trackUri)
   return (
     <SpotifyPlayer
       styles={{
